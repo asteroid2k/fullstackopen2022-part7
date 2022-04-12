@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { useField } from "../hooks";
 
 const CreateNew = (props) => {
-  const content = useField("text").default;
-  const author = useField("text").default;
-  const info = useField("text").default;
+  const { default: content, reset: contentReset } = useField("text");
+  const { default: author, reset: authorReset } = useField("text");
+  const { default: info, reset: infoReset } = useField("text");
 
   const navigate = useNavigate();
 
@@ -31,9 +31,9 @@ const CreateNew = (props) => {
 
   const resetForm = (e) => {
     e.preventDefault();
-    content.reset();
-    author.reset();
-    info.reset();
+    contentReset();
+    authorReset();
+    infoReset();
   };
 
   return (
