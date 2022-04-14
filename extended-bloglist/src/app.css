@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto Mono';
+}
+
+.notif {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  color: rgb(56, 56, 56);
+  background-color: rgba(0, 0, 255, 0.2);
+  font-weight: 500;
+}
+
+.blog-post {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 0.5rem 0.8rem;
+}
+
+.blog-post .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.blog-post .author {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+button {
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 2px 4px;
+}
+button:hover {
+  box-shadow: 3px 3px 0px black;
+  cursor: pointer;
+}
+.text-sm {
+  font-size: 0.8rem;
+}
+.nav {
+  padding: 0.8rem;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.cont {
+  max-width: 90%;
+  margin: 1rem auto;
+}
+.blogs {
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.center {
+  display: block;
+  margin-inline: auto;
+}
+a {
+  color: inherit;
+}
+.link:hover,
+a:hover {
+  color: inherit;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.chonky {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-inline: auto;
+}
+.f-g {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.f-g input {
+  padding: 0.6rem 0.8rem;
+  font-size: 1.1rem;
+}
+.f-g label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.blog-details,
+.togglable {
+  padding: 1.5rem 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+}
+.cat {
+  border-width: 2px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 200px;
+  margin-inline: auto;
+}
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.blog-headline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+}
+.blog-details .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.blog-details .author {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+.blog-details .url {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 255, 0.8);
+}
+.blog-details .comment {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.table {
+  border-collapse: collapse;
+}
+.table thead {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.table th,
+.table td {
+  padding: 0.5rem 0.8rem;
+}
